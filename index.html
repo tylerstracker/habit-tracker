@@ -17,31 +17,27 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .header p{font-size:12px;color:#93c5fd;margin-top:2px;}
 .save-pill{display:inline-block;font-size:10px;padding:2px 8px;border-radius:20px;margin-top:6px;background:rgba(255,255,255,0.15);color:#bfdbfe;min-height:18px;}
 .save-pill.ok{background:#1e4d8c;color:#f5f0e8;}
+.save-pill.err{background:#7f1d1d;color:#fca5a5;}
+.save-pill.syncing{background:#1e3a5f;color:#93c5fd;}
 .nav-btn{background:rgba(255,255,255,0.18);border:none;color:#f5f0e8;border-radius:8px;padding:6px 12px;font-size:12px;font-weight:600;cursor:pointer;}
 .nav-row{display:flex;align-items:center;gap:8px;margin-top:8px;}
 .nav-row span{flex:1;text-align:center;font-size:13px;font-weight:700;color:#f5f0e8;}
-
 .main-tabs{display:flex;background:#1a3a6b;border-bottom:2px solid #2563a8;}
 .main-tab{flex:1;padding:10px 0;text-align:center;font-size:12px;font-weight:600;color:#93c5fd;cursor:pointer;border-bottom:3px solid transparent;transition:all 0.15s;}
 .main-tab.active{color:#f5f0e8;border-bottom-color:#f5f0e8;background:rgba(245,240,232,0.07);}
-
 .card{background:#1e293b;border-radius:12px;margin:10px 12px 0;padding:12px;border:1px solid #334155;}
 .card-title{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;font-weight:700;}
-
 .stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 12px 0;}
 .stat-card{background:#1e293b;border-radius:12px;padding:10px 6px;text-align:center;border:1px solid #334155;}
 .stat-card .num{font-size:20px;font-weight:800;color:#f5f0e8;}
 .stat-card .lbl{font-size:9px;color:#64748b;text-transform:uppercase;letter-spacing:0.04em;margin-top:2px;}
 .stat-card .sub{font-size:9px;margin-top:1px;font-weight:600;}
 .sub.accent{color:#f5f0e8;} .sub.blue{color:#60a5fa;} .sub.muted{color:#475569;}
-
 .chart-card svg{width:100%;display:block;}
-
 .week-tabs{display:flex;gap:6px;padding:10px 12px 0;overflow-x:auto;scrollbar-width:none;}
 .week-tabs::-webkit-scrollbar{display:none;}
 .week-tab{flex-shrink:0;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid #334155;background:#1e293b;color:#94a3b8;transition:all 0.15s;}
 .week-tab.active{background:#2563a8;border-color:#2563a8;color:#f5f0e8;}
-
 .habits-section{padding:10px 12px 0;}
 .day-header{display:grid;grid-template-columns:1fr repeat(7,34px);gap:2px;margin-bottom:4px;}
 .day-cell{text-align:center;font-size:9px;color:#64748b;}
@@ -49,7 +45,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .day-cell .dd{font-size:9px;margin-top:1px;color:#475569;}
 .day-cell.today .dn{color:#f5f0e8;}
 .day-cell.today .dd{color:#bfdbfe;font-weight:700;}
-
 .habit-row{display:grid;grid-template-columns:1fr repeat(7,34px);gap:2px;margin-bottom:6px;align-items:center;}
 .habit-name-wrap{display:flex;align-items:center;gap:6px;cursor:pointer;}
 .color-bar{width:3px;height:30px;border-radius:2px;flex-shrink:0;}
@@ -58,7 +53,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .cb-cell{display:flex;justify-content:center;}
 .cb{width:30px;height:30px;border-radius:8px;border:2px solid #334155;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all 0.12s;user-select:none;}
 .cb.done{border-color:transparent;}
-
 .add-section{margin:12px 12px 0;background:#1e293b;border-radius:12px;padding:12px;border:1px solid #334155;}
 .add-section h3{font-size:11px;color:#64748b;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:8px;font-weight:700;}
 .add-row-inner{display:flex;gap:8px;}
@@ -66,21 +60,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .add-input::placeholder{color:#475569;}
 .add-input:focus{border-color:#2563a8;}
 .add-btn{background:#2563a8;color:#f5f0e8;border:none;border-radius:8px;padding:8px 16px;cursor:pointer;font-weight:700;font-size:14px;}
-
 .pies-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .pie-wrap{background:#162032;border-radius:12px;padding:10px;border:1px solid #334155;text-align:center;}
 .pie-wrap .pie-title{font-size:10px;color:#64748b;margin-bottom:6px;font-weight:600;}
-
 .bw-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
 .bw-card{background:#162032;border-radius:12px;padding:10px;border:1px solid #334155;}
 .bw-card .bw-label{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px;}
 .bw-card .bw-name{font-size:13px;font-weight:700;color:#f5f0e8;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .bw-card .bw-bar{height:6px;border-radius:3px;margin-top:6px;background:#334155;overflow:hidden;}
 .bw-card .bw-fill{height:100%;border-radius:3px;}
-
 .heatmap-scroll{overflow-x:auto;scrollbar-width:none;}
 .heatmap-scroll::-webkit-scrollbar{display:none;}
-
 .modal-bg{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:100;align-items:flex-end;justify-content:center;}
 .modal-bg.open{display:flex;}
 .modal{background:#1e293b;border-radius:16px 16px 0 0;padding:20px;width:100%;max-width:480px;border-top:2px solid #f5f0e8;}
@@ -90,6 +80,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .modal-save{flex:1;background:#2563a8;color:#f5f0e8;border:none;border-radius:8px;padding:10px;font-size:14px;font-weight:700;cursor:pointer;}
 .modal-del{background:#ef4444;color:#fff;border:none;border-radius:8px;padding:10px 16px;font-size:14px;font-weight:700;cursor:pointer;}
 .modal-cancel{background:#334155;color:#94a3b8;border:none;border-radius:8px;padding:10px 16px;font-size:14px;cursor:pointer;}
+.loading{display:flex;align-items:center;justify-content:center;height:200px;flex-direction:column;gap:12px;}
+.spinner{width:32px;height:32px;border:3px solid #334155;border-top-color:#2563a8;border-radius:50%;animation:spin 0.8s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg);}}
 .hidden{display:none;}
 </style>
 </head>
@@ -98,7 +91,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 <div class="header">
   <div class="header-top">
     <div><h1>📅 Habit Tracker</h1><p id="dateRange"></p></div>
-    <div class="save-pill" id="savePill">Ready</div>
+    <div class="save-pill" id="savePill">Loading…</div>
   </div>
   <div class="nav-row">
     <button class="nav-btn" onclick="shiftWeek(-1)">‹ Prev</button>
@@ -114,46 +107,40 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <div id="tab-tracker">
-  <div class="stats-row">
-    <div class="stat-card"><div class="num" id="s100">0</div><div class="lbl">Perfect</div><div class="sub accent">days</div></div>
-    <div class="stat-card"><div class="num" id="sStreak">0</div><div class="lbl">Streak</div><div class="sub accent">🔥 days</div></div>
-    <div class="stat-card"><div class="num" id="sTotal">0</div><div class="lbl">All Time</div><div class="sub blue">checks</div></div>
+  <div id="loadingDiv" class="loading">
+    <div class="spinner"></div>
+    <div style="color:#64748b;font-size:13px">Syncing your data…</div>
   </div>
-  <div class="card chart-card">
-    <div class="card-title">3-Week Completion Overview</div>
-    <svg id="sparkline" viewBox="0 0 340 65"></svg>
-  </div>
-  <div class="week-tabs" id="weekTabs"></div>
-  <div class="habits-section">
-    <div class="day-header" id="dayHeader"></div>
-    <div id="habitsList"></div>
-  </div>
-  <div class="add-section">
-    <h3>Add New Habit</h3>
-    <div class="add-row-inner">
-      <input class="add-input" id="newHabitInput" placeholder="e.g. 🏃 Morning Run" maxlength="40"/>
-      <button class="add-btn" onclick="addHabit()">Add</button>
+  <div id="trackerContent" class="hidden">
+    <div class="stats-row">
+      <div class="stat-card"><div class="num" id="s100">0</div><div class="lbl">Perfect</div><div class="sub accent">days</div></div>
+      <div class="stat-card"><div class="num" id="sStreak">0</div><div class="lbl">Streak</div><div class="sub accent">🔥 days</div></div>
+      <div class="stat-card"><div class="num" id="sTotal">0</div><div class="lbl">All Time</div><div class="sub blue">checks</div></div>
+    </div>
+    <div class="card chart-card">
+      <div class="card-title">3-Week Completion Overview</div>
+      <svg id="sparkline" viewBox="0 0 340 65"></svg>
+    </div>
+    <div class="week-tabs" id="weekTabs"></div>
+    <div class="habits-section">
+      <div class="day-header" id="dayHeader"></div>
+      <div id="habitsList"></div>
+    </div>
+    <div class="add-section">
+      <h3>Add New Habit</h3>
+      <div class="add-row-inner">
+        <input class="add-input" id="newHabitInput" placeholder="e.g. 🏃 Morning Run" maxlength="40"/>
+        <button class="add-btn" onclick="addHabit()">Add</button>
+      </div>
     </div>
   </div>
 </div>
 
 <div id="tab-stats" class="hidden">
-  <div class="card" style="margin-top:10px;">
-    <div class="card-title">This Week — Habit Completion</div>
-    <div class="pies-grid" id="pieGrid"></div>
-  </div>
-  <div class="card">
-    <div class="card-title">Overall 3-Week Rates</div>
-    <div id="overallBars"></div>
-  </div>
-  <div class="card">
-    <div class="card-title">Best & Worst Habits</div>
-    <div class="bw-row" id="bwRow"></div>
-  </div>
-  <div class="card">
-    <div class="card-title">Weekly Summary</div>
-    <svg id="barChart" viewBox="0 0 340 120" width="100%" style="display:block;"></svg>
-  </div>
+  <div class="card" style="margin-top:10px;"><div class="card-title">This Week — Habit Completion</div><div class="pies-grid" id="pieGrid"></div></div>
+  <div class="card"><div class="card-title">Overall 3-Week Rates</div><div id="overallBars"></div></div>
+  <div class="card"><div class="card-title">Best & Worst Habits</div><div class="bw-row" id="bwRow"></div></div>
+  <div class="card"><div class="card-title">Weekly Summary</div><svg id="barChart" viewBox="0 0 340 120" width="100%" style="display:block;"></svg></div>
 </div>
 
 <div id="tab-heatmap" class="hidden">
@@ -162,10 +149,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <p style="font-size:11px;color:#64748b;margin-bottom:10px;">Every day you've used the tracker — darker = more habits done</p>
     <div class="heatmap-scroll"><div id="heatmapWrap"></div></div>
   </div>
-  <div class="card">
-    <div class="card-title">Per-Habit History (Last 30 Days)</div>
-    <div id="habitHistory"></div>
-  </div>
+  <div class="card"><div class="card-title">Per-Habit History (Last 30 Days)</div><div id="habitHistory"></div></div>
 </div>
 
 <div class="modal-bg" id="modalBg" onclick="closeModal(event)">
@@ -181,13 +165,32 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 </div>
 
 <script>
+// ── Supabase config ───────────────────────────────────────
+const SUPA_URL = "https://gqctydqxrhmrfultwdhe.supabase.co";
+const SUPA_KEY = "sb_publishable_Mwqeh5rDIjXXx5IKm6wa8A_TiBR9WfI";
+const HEADERS = {"Content-Type":"application/json","apikey":SUPA_KEY,"Authorization":`Bearer ${SUPA_KEY}`};
+
+async function dbGet(table, id) {
+  const r = await fetch(`${SUPA_URL}/rest/v1/${table}?id=eq.${id}&select=data`, {headers:HEADERS});
+  const j = await r.json();
+  return j && j[0] ? j[0].data : null;
+}
+async function dbSet(table, id, data) {
+  await fetch(`${SUPA_URL}/rest/v1/${table}`, {
+    method:"POST", headers:{...HEADERS,"Prefer":"resolution=merge-duplicates"},
+    body:JSON.stringify({id, data})
+  });
+}
+
+// ── Constants ─────────────────────────────────────────────
 const DAY_NAMES=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"];
 const MONTHS=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 const TOTAL=21;
 const ACCENT="#f5f0e8";
-// Blues + off-white accent for habit colors
 const COLORS=["#2563a8","#3b7dd8","#1a3a6b","#4a90d9","#1565a8","#2980b9","#1e5799","#0d47a1","#1976d2","#0288d1","#5b9bd5","#1e4d8c"];
 const DEFAULT_HABITS=["Daily Exercise","Bed Before 11pm","Drink Protein","Eat Vegetables","Call Family","No Snacks","Do Homework","Water Plants","Read 10+ Pages","Make Bed"];
+const DB_HABITS_ID = "habits_v1";
+const DB_CHECKED_ID = "checked_v1";
 
 let habits=[],checked={},weekOffset=0,activeWeek=0,modalIdx=-1,activeTab='tracker';
 
@@ -197,17 +200,51 @@ function ck(hi,k){return `${hi}-${k}`;}
 function getDays(mon){return Array.from({length:21},(_,i)=>{const d=new Date(mon);d.setDate(mon.getDate()+i);return d;});}
 const todayDate=new Date();todayDate.setHours(0,0,0,0);
 
-function load(){
-  try{habits=JSON.parse(localStorage.getItem("ht3_habits"))||[...DEFAULT_HABITS];}catch(e){habits=[...DEFAULT_HABITS];}
-  try{checked=JSON.parse(localStorage.getItem("ht3_checked"))||{};}catch(e){checked={};}
+// ── Load & Save ───────────────────────────────────────────
+async function load() {
+  setPill("Syncing…","syncing");
+  try {
+    const [h, c] = await Promise.all([
+      dbGet("habits", DB_HABITS_ID),
+      dbGet("checked", DB_CHECKED_ID)
+    ]);
+    habits = h || [...DEFAULT_HABITS];
+    checked = c || {};
+    setPill("Synced ✅","ok");
+  } catch(e) {
+    // fallback to localStorage
+    try{habits=JSON.parse(localStorage.getItem("ht3_habits"))||[...DEFAULT_HABITS];}catch(e){habits=[...DEFAULT_HABITS];}
+    try{checked=JSON.parse(localStorage.getItem("ht3_checked"))||{};}catch(e){checked={};}
+    setPill("Offline mode","err");
+  }
+  document.getElementById("loadingDiv").classList.add("hidden");
+  document.getElementById("trackerContent").classList.remove("hidden");
+  render();
 }
-function save(){
-  localStorage.setItem("ht3_habits",JSON.stringify(habits));
-  localStorage.setItem("ht3_checked",JSON.stringify(checked));
-  const p=document.getElementById("savePill");
-  p.textContent="✅ Saved";p.className="save-pill ok";
-  setTimeout(()=>{p.textContent="";p.className="save-pill";},1500);
+
+async function save() {
+  // Save to localStorage immediately for speed
+  localStorage.setItem("ht3_habits", JSON.stringify(habits));
+  localStorage.setItem("ht3_checked", JSON.stringify(checked));
+  setPill("Saving…","syncing");
+  try {
+    await Promise.all([
+      dbSet("habits", DB_HABITS_ID, habits),
+      dbSet("checked", DB_CHECKED_ID, checked)
+    ]);
+    setPill("Synced ✅","ok");
+  } catch(e) {
+    setPill("Saved locally","err");
+  }
+  setTimeout(()=>setPill("",""),2000);
 }
+
+function setPill(text, type) {
+  const p = document.getElementById("savePill");
+  p.textContent = text;
+  p.className = `save-pill${type?" "+type:""}`;
+}
+
 function calcStreak(){let s=0,d=new Date(todayDate);while(true){const k=dk(d);if(!habits.some((_,hi)=>checked[ck(hi,k)]))break;s++;d.setDate(d.getDate()-1);}return s;}
 function allTimeTotals(){return habits.map((_,hi)=>Object.keys(checked).filter(k=>k.startsWith(`${hi}-`)&&checked[k]).length);}
 
@@ -241,21 +278,18 @@ function render(){
   [0,1,2].forEach(w=>{const x=pL+((w*7+3)/20)*plotW;sh+=`<text x="${x.toFixed(1)}" y="${H-1}" font-size="7" fill="#475569" text-anchor="middle">Wk ${w+1}</text>`;});
   document.getElementById("sparkline").innerHTML=sh;
 
-  // Week tabs
   document.getElementById("weekTabs").innerHTML=[0,1,2].map(w=>{
     const s=allDays[w*7],e=allDays[w*7+6];
     const wPct=Math.round(allDays.slice(w*7,w*7+7).reduce((a,d)=>a+(habits.length?habits.filter((_,hi)=>checked[ck(hi,dk(d))]).length/habits.length*100:0),0)/7);
     return `<div class="week-tab${activeWeek===w?" active":""}" onclick="setWeek(${w})">Week ${w+1} · ${s.getDate()} ${MONTHS[s.getMonth()]} <span style="font-size:10px;opacity:0.75">${wPct}%</span></div>`;
   }).join("");
 
-  // Day header
   document.getElementById("dayHeader").innerHTML=`<div></div>`+weekDays.map(d=>{
     const isT=d.getTime()===todayDate.getTime();
     const di=d.getDay()===0?6:d.getDay()-1;
     return `<div class="day-cell${isT?" today":""}"><div class="dn">${DAY_NAMES[di]}</div><div class="dd">${d.getDate()}</div></div>`;
   }).join("");
 
-  // Habits
   document.getElementById("habitsList").innerHTML=habits.map((h,hi)=>{
     const color=COLORS[hi%COLORS.length];
     const weekDone=weekDays.filter(d=>checked[ck(hi,dk(d))]).length;
@@ -268,10 +302,7 @@ function render(){
     return `<div class="habit-row">
       <div class="habit-name-wrap" onclick="openModal(${hi})">
         <div class="color-bar" style="background:${color}"></div>
-        <div style="min-width:0">
-          <div class="habit-name">${h}</div>
-          <div class="habit-sub">${weekDone}/7 this week · ${totals[hi]} total</div>
-        </div>
+        <div style="min-width:0"><div class="habit-name">${h}</div><div class="habit-sub">${weekDone}/7 this week · ${totals[hi]} total</div></div>
       </div>${cells}
     </div>`;
   }).join("")||`<div style="color:#475569;font-size:12px;padding:16px;text-align:center">No habits yet — add one below!</div>`;
@@ -281,25 +312,20 @@ function render(){
 }
 
 function renderStats(allDays,weekDays,totals){
-  // Pie charts
   document.getElementById("pieGrid").innerHTML=habits.slice(0,4).map((h,hi)=>{
     const done=weekDays.filter(d=>checked[ck(hi,dk(d))]).length;
     const pct=Math.round((done/7)*100);
     const color=COLORS[hi%COLORS.length];
     const r=45,cx=60,cy=60,circ=2*Math.PI*r;
     const dash=circ*(pct/100),gap=circ-dash;
-    return `<div class="pie-wrap">
-      <div class="pie-title">${h}</div>
-      <svg viewBox="0 0 120 120">
-        <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#334155" stroke-width="14"/>
-        ${pct>0?`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="14" stroke-dasharray="${dash.toFixed(1)} ${gap.toFixed(1)}" stroke-dashoffset="${circ/4}" stroke-linecap="round"/>`:""}
-        <text x="${cx}" y="${cy+5}" font-size="18" font-weight="800" fill="${ACCENT}" text-anchor="middle">${pct}%</text>
-        <text x="${cx}" y="${cy+18}" font-size="8" fill="#64748b" text-anchor="middle">${done}/7 days</text>
-      </svg>
-    </div>`;
+    return `<div class="pie-wrap"><div class="pie-title">${h}</div><svg viewBox="0 0 120 120">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#334155" stroke-width="14"/>
+      ${pct>0?`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${color}" stroke-width="14" stroke-dasharray="${dash.toFixed(1)} ${gap.toFixed(1)}" stroke-dashoffset="${circ/4}" stroke-linecap="round"/>`:""}
+      <text x="${cx}" y="${cy+5}" font-size="18" font-weight="800" fill="${ACCENT}" text-anchor="middle">${pct}%</text>
+      <text x="${cx}" y="${cy+18}" font-size="8" fill="#64748b" text-anchor="middle">${done}/7 days</text>
+    </svg></div>`;
   }).join("")||`<div style="color:#475569;padding:16px;font-size:12px">No habits yet</div>`;
 
-  // Overall bars
   document.getElementById("overallBars").innerHTML=habits.map((h,hi)=>{
     const pct=Math.round((totals[hi]/21)*100);
     const color=COLORS[hi%COLORS.length];
@@ -315,7 +341,6 @@ function renderStats(allDays,weekDays,totals){
     </div>`;
   }).join("")||`<div style="color:#475569;font-size:12px">No habits yet</div>`;
 
-  // Best/Worst
   if(habits.length){
     const bi=totals.indexOf(Math.max(...totals)),wi=totals.indexOf(Math.min(...totals));
     document.getElementById("bwRow").innerHTML=[
@@ -323,8 +348,7 @@ function renderStats(allDays,weekDays,totals){
       {i:wi,label:"⚠️ Needs Work",color:"#ef4444"}
     ].map(({i,label,color})=>{
       const pct=Math.round((totals[i]/21)*100);
-      return `<div class="bw-card">
-        <div class="bw-label" style="color:${color}">${label}</div>
+      return `<div class="bw-card"><div class="bw-label" style="color:${color}">${label}</div>
         <div class="bw-name">${habits[i]}</div>
         <div style="font-size:11px;color:#64748b;margin-top:2px">${totals[i]}/21 days</div>
         <div class="bw-bar"><div class="bw-fill" style="width:${pct}%;background:${color}"></div></div>
@@ -332,7 +356,6 @@ function renderStats(allDays,weekDays,totals){
     }).join("");
   }
 
-  // Bar chart
   const W=340,H=120,pL=30,pR=10,pT=10,pB=30,plotW=W-pL-pR,plotH=H-pT-pB;
   const wPcts=[0,1,2].map(w=>habits.length?Math.round(allDays.slice(w*7,w*7+7).reduce((a,d)=>a+habits.filter((_,hi)=>checked[ck(hi,dk(d))]).length,0)/(habits.length*7)*100):0);
   const bColors=["#1a3a6b","#2563a8","#3b7dd8"];
@@ -397,15 +420,15 @@ function renderHeatmap(){
   }).join("")||`<div style="color:#475569;font-size:12px">No habits yet</div>`;
 }
 
-function toggle(hi,k){checked[ck(hi,k)]=!checked[ck(hi,k)];save();render();}
+function toggle(hi,k){checked[ck(hi,k)]=!checked[ck(hi,k)];render();save();}
 function setWeek(w){activeWeek=w;render();}
 function shiftWeek(d){if(d>0&&weekOffset>=0)return;weekOffset+=d;activeWeek=0;render();}
-function addHabit(){const i=document.getElementById("newHabitInput");if(!i||!i.value.trim())return;habits.push(i.value.trim());i.value="";save();render();}
+function addHabit(){const i=document.getElementById("newHabitInput");if(!i||!i.value.trim())return;habits.push(i.value.trim());i.value="";render();save();}
 document.getElementById("newHabitInput").addEventListener("keydown",e=>{if(e.key==="Enter")addHabit();});
 function openModal(hi){modalIdx=hi;document.getElementById("modalInput").value=habits[hi];document.getElementById("modalBg").classList.add("open");setTimeout(()=>document.getElementById("modalInput").focus(),100);}
 function closeModal(e){if(!e||e.target===document.getElementById("modalBg")){document.getElementById("modalBg").classList.remove("open");modalIdx=-1;}}
-function saveModal(){if(modalIdx<0)return;const v=document.getElementById("modalInput").value.trim();if(v)habits[modalIdx]=v;closeModal();save();render();}
-function deleteFromModal(){if(modalIdx<0)return;habits.splice(modalIdx,1);closeModal();save();render();}
+function saveModal(){if(modalIdx<0)return;const v=document.getElementById("modalInput").value.trim();if(v)habits[modalIdx]=v;closeModal();render();save();}
+function deleteFromModal(){if(modalIdx<0)return;habits.splice(modalIdx,1);closeModal();render();save();}
 document.getElementById("modalInput").addEventListener("keydown",e=>{if(e.key==="Enter")saveModal();});
 function showTab(t){
   activeTab=t;
@@ -413,7 +436,8 @@ function showTab(t){
   document.querySelectorAll('.main-tab').forEach((el,i)=>{el.classList.toggle('active',['tracker','stats','heatmap'][i]===t);});
   render();
 }
-load();render();
+
+load();
 </script>
 </body>
 </html>
